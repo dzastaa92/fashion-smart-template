@@ -1,0 +1,34 @@
+body {
+  padding-top:70px;
+}
+nav{
+  height: 80px;
+
+}
+#myScrollspy{
+  width: 440px;
+  margin-right: 0px;
+  margin-left: auto;
+  button{
+    float: left;
+    border: 0px;
+  }
+}
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
