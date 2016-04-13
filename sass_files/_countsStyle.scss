@@ -1,8 +1,15 @@
 #counts {
   text-align: center;
   .row {
-    padding: 40px 120px 70px 120px;
+    padding: 40px 50px 70px 50px;
+
     @include medium {
+      padding: 40px 80px 70px 80px;
+    }
+    @include large {
+      padding: 40px 120px 70px 120px;
+    }
+    @include xlarge{
       padding: 40px 210px 70px 210px;
     }
   }
@@ -19,6 +26,14 @@
   border-radius: 230px;
   margin: auto;
   margin-bottom: 40px;
+  @include large{
+    height: 200px;
+    width: 200px;
+  }
+  @include xxlarge{
+    height: 230px;
+    width: 230px;
+  }
 }
 .counts-circle__percentage{
 }

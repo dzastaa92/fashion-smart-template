@@ -1,21 +1,33 @@
 
 nav {
   height: 80px;
-  background-color: white;
+  background-color: $color-light;
+  padding: 20px 50px;
+
+  @include medium {
+    padding: 20px 80px;
+  }
+  @include large {
+    padding: 20px 120px;
+  }
+  @include xlarge {
+    padding: 20px 210px;
+  }
+  position: relative;
+  transition: all 1.2s ease;
 }
 
 .nav-logo {
   float: left;
   font-size: 24px;
   font-family: "Quicksand";
-  border: 1px solid #f34739;
+  border: 1px solid $color-red;
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
-  margin-top: 20px;
-  margin-left: 210px;
+
   a {
-    color: black;
+    color: $color-dark;
     padding: 10px;
   }
   a:hover {
@@ -25,8 +37,17 @@ nav {
 
 .nav-icons {
   float: right;
-  margin-right: 440px;
-  margin-top: 25px;
+  margin-top: 10px;
+  visibility: hidden;
+  transition: all 0.9s ease;
+  @include large {
+    visibility: visible;
+    padding-right: 320px;
+  }
+
+  @include xlarge {
+    padding-right: 230px;
+  }
   a {
     display: inline-block;
     margin-right: 30px;
@@ -53,36 +74,40 @@ nav {
   }
 }
 
-#myScrollspy {
-  width: 440px;
-  margin-right: 0px;
-  margin-left: auto;
-  button {
-    float: left;
-    border: 0px;
+
+#navigation-menu {
+  height: 80px;
+  padding-top: 15px;
+  background-color: transparent;
+  border: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  transition: all 1s ease;
+  @include medium {
+    width: 440px;
+    background-color: $color-dark;
   }
 }
 
-.navbar {
-  padding-top: 15px;
-
-  background-color: white;
+.icon-bar {
+  background-color: $color-dark !important;
   @include medium {
-    width: 440px;
-    background-color: black;
-  }
-  margin-right: 0;
-  margin-left: auto;
-  height: 80px;
-  line-height: 80px;
-  button {
-    border: 0;
-    float: left;
+    background-color: $color-light !important;
   }
 }
 
 .navbar-header {
   float: none;
+  button {
+    border: 0;
+    float: right;
+    @include medium {
+      float: left;
+    }
+
+  }
 }
 
 .navbar-toggle {
@@ -93,14 +118,77 @@ nav {
   display: none !important;
 }
 
-.navbar-nav {
-  float: none !important;
+ul.navbar-nav {
+  float: right;
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: 100%;
+  @include medium {
+    margin-right: 0;
+    float: none;
+    width: 440px;
+  }
 }
 
 .navbar-nav > li {
+  padding: 10px;
   float: none;
+  list-style: none;
+  font-size: 20px;
+  background-color: $color-light;
+  text-align: right;
+  @include medium {
+    background-color: $color-dark;
+    text-align: left;
+  }
+}
+
+.navbar-collapse {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .navbar-collapse.collapse.in {
   display: block !important;
 }
+
+.navbar-brand {
+  color: $color-light;
+  visibility: hidden;
+  font-family: "Quicksand";
+  font-size: 18px;
+  @include medium {
+    visibility: visible;
+  }
+}
+li>a{
+  color: $color-grey;
+}
+
+li > a:hover {
+  color: $color-dark !important;
+  text-decoration: none;
+  @include medium {
+    color: $color-light !important;
+  }
+}
+
+.nav-up{
+  margin-top: 10px;
+  opacity: 1;
+}
+.nav-down{
+  margin-top: -100px;
+  opacity: 0;
+}
+
+.navOnScroll{
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0 4px 5px $color-grey;
+  -moz-box-shadow: 0 4px 5px $color-grey;
+  box-shadow: 0 4px 5px $color-grey;
+}
+

@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<nav class="navbar-fixed-top">
+<nav id="navigation" class="navbar-fixed-top">
     <div class="nav-logo">
         <a href="#home">DSGN</a>
     </div>
-    <div class="nav-icons">
+    <div class="nav-icons visible-md visible-lg">
         <a href="http://facebook.com" target="_blank">
             <div class="facebook"></div>
         </a>
@@ -26,7 +26,8 @@
             <div class="linkedin"></div>
         </a>
     </div>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div id="navigation-menu">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
@@ -35,12 +36,15 @@
             </button>
             <a class="navbar-brand" href="#">Menu</a>
         </div>
+
         <div class="navbar-collapse collapse">
-            <li><a href="#counts">Our achievements</a></li>
-            <li><a href="#ourTeam">Our team</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#brands">Brands</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <ul class="navbar-nav">
+                <li><a href="#counts">Our achievements</a></li>
+                <li><a href="#ourTeam">Our team</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
 
@@ -123,5 +127,6 @@
 
 <script src="../Scripts/jquery-2.1.4.js"></script>
 <script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../Scripts/MainScript.js"></script>
 </body>
 </html>
