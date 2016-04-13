@@ -1,0 +1,46 @@
+#counts {
+  text-align: center;
+  .row {
+    padding: 40px 120px 70px 120px;
+    @include medium {
+      padding: 40px 210px 70px 210px;
+    }
+  }
+  p{
+    font-size: 18px;
+    font-family: "Quicksand";
+    color: rgb(69, 69, 69);
+  }
+}
+.counts-circle{
+  height: 230px;
+  width: 230px;
+  border: 1px solid grey;
+  border-radius: 230px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.counts-circle__percentage{
+}
+.counts-circle-text{
+  margin-top: 50px;
+  h2{
+    font-size: 72px;
+    font-family: "Quicksand";
+    font-weight: 700;
+  }
+  p{
+    text-transform: uppercase;
+  }
+}
+.counts-circle-text__red{
+  color: #f34739;
+}
+.counts-circle-text__green {
+  color: #009989;
+}
+.counts-circle-text__darkblue{
+  color: #152b3b;
+}
+.counts-desc{
+}
