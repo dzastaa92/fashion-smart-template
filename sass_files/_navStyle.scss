@@ -1,19 +1,11 @@
 
 nav {
+  @include padding();
   height: 80px;
   background-color: $color-light;
-  padding: 20px 50px;
-
-  @include medium {
-    padding: 20px 80px;
-  }
-  @include large {
-    padding: 20px 120px;
-  }
-  @include xlarge {
-    padding: 20px 210px;
-  }
   position: relative;
+  left: 0;
+  top:0;
   transition: all 1.2s ease;
 }
 
@@ -144,6 +136,7 @@ ul.navbar-nav {
 }
 
 .navbar-collapse {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   border: 0;
@@ -164,9 +157,12 @@ ul.navbar-nav {
 }
 li>a{
   color: $color-grey;
+  @include medium{
+    color: #B5B5B5;
+  }
 }
 
-li > a:hover {
+li > a:hover, li > a:focus{
   color: $color-dark !important;
   text-decoration: none;
   @include medium {
@@ -184,9 +180,6 @@ li > a:hover {
 }
 
 .navOnScroll{
-  height: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   -webkit-box-shadow: 0 4px 5px $color-grey;
   -moz-box-shadow: 0 4px 5px $color-grey;
   box-shadow: 0 4px 5px $color-grey;

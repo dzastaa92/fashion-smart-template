@@ -1,18 +1,16 @@
-
-
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
 
-    if (scroll >= 200){
+    if (scroll >= 200) {
         $('.nav-icons').removeClass('nav-up').addClass('nav-down');
         $('#navigation').addClass('navOnScroll');
-        $('#navigation-menu').animate({height:'60px', 'padding-top':'5px'}, 5);
+
     }
     else {
         $('.nav-icons').removeClass('nav-down').addClass('nav-up');
         $('#navigation').removeClass('navOnScroll');
-        $('#navigation-menu').animate({height:'80px','padding-top':'15px'}, 5);
+
     }
 });
 
