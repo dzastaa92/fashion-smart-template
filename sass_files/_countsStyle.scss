@@ -1,61 +1,94 @@
-#counts {
-  text-align: center;
-  .row {
-    padding: 40px 50px 70px 50px;
+/* Pie Chart */
+#counts{
+ @include padding();
+}
+.progress-pie-chart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #E5E5E5;
+  position: relative;
+}
 
-    @include medium {
-      padding: 40px 80px 70px 80px;
-    }
-    @include large {
-      padding: 40px 120px 70px 120px;
-    }
-    @include xlarge{
-      padding: 40px 210px 70px 210px;
-    }
-  }
-  p{
+
+.progress-pie-chart.gt-50{
+  background-color: $color-green;
+}
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 200px, 200px, 100px);
+}
+.ppc-progress .ppc-progress-fill {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  clip: rect(0, 100px, 200px, 0);
+  background: $color-green;
+  transform: rotate(60deg);
+}
+
+.gt-50 .ppc-progress {
+  clip: rect(0, 100px, 200px, 0);
+}
+.gt-50 .ppc-progress .ppc-progress-fill {
+  clip: rect(0, 200px, 200px, 100px);
+  background: #E5E5E5;
+}
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 190px/2);
+  top: calc(50% - 190px/2);
+  width: 190px;
+  height: 190px;
+  background: #fff;
+  text-align: center;
+  display: table;
+}
+.ppc-percents span {
+  display: block;
+  font-weight: bold;
+  color: $color-green;
+  font-size: 64px;
+  font-family: "Quicksand";
+}
+
+.ppc-percents p {
+  font-size: 18px;
+  font-family: "Quicksand";
+  color: rgb(69, 69, 69);
+  text-transform: uppercase;
+  line-height: 1.222;
+  text-align: center;
+}
+
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.progress-pie-chart {
+  margin: 50px auto 0;
+}
+
+.bar_container p{
     font-size: 18px;
     font-family: "Quicksand";
     color: rgb(69, 69, 69);
-  }
-}
-.counts-circle{
-  height: 230px;
-  width: 230px;
-  border: 1px solid grey;
-  border-radius: 230px;
-  margin: auto;
-  margin-bottom: 40px;
-  @include large{
-    height: 200px;
-    width: 200px;
-  }
-  @include xxlarge{
-    height: 230px;
-    width: 230px;
-  }
-}
-.counts-circle__percentage{
-}
-.counts-circle-text{
-  margin-top: 50px;
-  h2{
-    font-size: 72px;
-    font-family: "Quicksand";
-    font-weight: 700;
-  }
-  p{
-    text-transform: uppercase;
-  }
-}
-.counts-circle-text__red{
-  color: #f34739;
-}
-.counts-circle-text__green {
-  color: #009989;
-}
-.counts-circle-text__darkblue{
-  color: #152b3b;
-}
-.counts-desc{
+  text-align: center;
+
 }

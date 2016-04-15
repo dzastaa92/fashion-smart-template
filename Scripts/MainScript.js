@@ -34,3 +34,50 @@ $(document).on('click', 'a[href^="#"]', function (e) {
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
+
+
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+
+        var progress_circles = $('.main_container')
+        progress_circles.each(function () {
+            var elem = $(this);
+            var progressbar = elem.find('.progress_bar');
+            var max = progressbar.attr('max');
+            var time = (1000 / max) * 5;
+            var value = progressbar.val();
+
+
+
+            var loading = function () {
+                value += 1;
+
+                elem.find($('.progress-value')).html(value);
+                var $ppc = elem.find($('.progress-pie-chart')),
+                    deg = 360 * value / 100;
+                if (value > 50) {
+                    $ppc.addClass('gt-50');
+                }
+
+                elem.find($('.ppc-progress-fill')).css('transform', 'rotate(' + deg + 'deg)');
+                elem.find($('.ppc-percents span')).html(value );
+
+                if (value == max) {
+                    clearInterval(animate);
+                }
+            };
+            
+
+            var animate = setInterval(function () {
+                if (value < max) {
+                    loading();
+                }
+            }, time);
+        });
+
+
+    });
+
+
+});

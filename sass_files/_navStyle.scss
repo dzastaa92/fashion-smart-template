@@ -147,7 +147,7 @@ ul.navbar-nav {
 }
 
 .navbar-brand {
-  color: $color-light;
+  color: $color-light-grey;
   visibility: hidden;
   font-family: "Quicksand";
   font-size: 18px;
@@ -158,11 +158,11 @@ ul.navbar-nav {
 li>a{
   color: $color-grey;
   @include medium{
-    color: #B5B5B5;
+    color: $color-light-grey;
   }
 }
 
-li > a:hover, li > a:focus{
+li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus{
   color: $color-dark !important;
   text-decoration: none;
   @include medium {
