@@ -38,16 +38,16 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 
 $(document).ready(function () {
 
-    $(window).scroll(function () {
 
-        var progress_circles = $('.main_container')
-        progress_circles.each(function () {
+    var progress_circles = $('.main_container')
+    var distance = (progress_circles.offset().top - $(window).scrollTop())/2;
+
+    progress_circles.each(function () {
             var elem = $(this);
             var progressbar = elem.find('.progress_bar');
             var max = progressbar.attr('max');
             var time = (1000 / max) * 5;
             var value = progressbar.val();
-
 
 
             var loading = function () {
@@ -61,23 +61,21 @@ $(document).ready(function () {
                 }
 
                 elem.find($('.ppc-progress-fill')).css('transform', 'rotate(' + deg + 'deg)');
-                elem.find($('.ppc-percents span')).html(value );
+                elem.find($('.ppc-percents span')).html(value);
 
                 if (value == max) {
                     clearInterval(animate);
                 }
             };
-            
 
             var animate = setInterval(function () {
                 if (value < max) {
-                    loading();
+                    if($(document).scrollTop() >= distance)
+                        loading();
                 }
             }, time);
-        });
+        }
+    );
 
-
-    });
-
-
-});
+})
+;
