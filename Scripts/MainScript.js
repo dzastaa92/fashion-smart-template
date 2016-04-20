@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 
     var progress_circles = $('.main_container')
-    var distance = (progress_circles.offset().top - $(window).scrollTop())/2;
+    var distance = (progress_circles.offset().top - $(window).scrollTop())/3;
 
     progress_circles.each(function () {
             var elem = $(this);
