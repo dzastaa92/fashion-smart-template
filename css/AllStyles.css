@@ -617,3 +617,8 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   @media screen and (min-width: 481px) {
     .portfolio-container .portfolio-container-fourth {
       display: none; } }
+
+#contact {
+  min-width: 300px;
+  width: auto;
+  background-color: black; }
