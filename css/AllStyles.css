@@ -412,7 +412,18 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   text-align: center; }
 
 .ourTeam-element-content {
-  height: 300px; }
+  height: 300px;
+  position: relative; }
+
+.ourTeam-element-content:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 30px; }
 
 .ourTeam-element-content h2 {
   font-size: 36px;
@@ -499,6 +510,13 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   border-bottom: 0px; }
 
 @media screen and (min-width: 768px) {
+  .ourTeam-element:nth-child(even) .ourTeam-element-content:after {
+    left: 100%;
+    top: 50%;
+    border-left-color: #ffffff;
+    margin-top: -30px; } }
+
+@media screen and (min-width: 768px) {
   .ourTeam-element:nth-child(even) .ourTeam-element-picture_border {
     top: 20px;
     right: 20px;
@@ -536,6 +554,13 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   .ourTeam-element:nth-child(odd) .ourTeam-element-content {
     float: right;
     clear: right; } }
+
+@media screen and (min-width: 768px) {
+  .ourTeam-element:nth-child(odd) .ourTeam-element-content:after {
+    right: 100%;
+    top: 50%;
+    border-right-color: #ffffff;
+    margin-top: -30px; } }
 
 @media screen and (min-width: 768px) {
   .ourTeam-element:nth-child(odd) .ourTeam-element-content_border {

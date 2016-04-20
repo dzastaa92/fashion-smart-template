@@ -71,7 +71,21 @@
 
 .ourTeam-element-content {
   height: 300px;
+  position: relative;
 }
+
+.ourTeam-element-content:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 30px;
+}
+
+
 
 .ourTeam-element-content h2 {
   font-size: 36px;
@@ -176,6 +190,16 @@
 }
 
 .ourTeam-element:nth-child(even) {
+
+  .ourTeam-element-content:after {
+    @include medium {
+      left: 100%;
+      top: 50%;
+      border-left-color: #ffffff;
+      margin-top: -30px;
+    }
+  }
+
   .ourTeam-element-picture_border {
     @include medium {
       top: 20px;
@@ -224,6 +248,16 @@
 
     }
   }
+
+  .ourTeam-element-content:after {
+    @include medium {
+      right: 100%;
+      top: 50%;
+      border-right-color: #ffffff;
+      margin-top: -30px;
+    }
+  }
+
   .ourTeam-element-content_border {
     @include medium {
       top: 20px;
