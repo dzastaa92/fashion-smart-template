@@ -582,6 +582,7 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   margin: 0;
   padding: 0;
   height: auto;
+  display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   -webkit-flex-direction: row;
@@ -606,19 +607,68 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
     position: relative; }
   .portfolio-container .portfolio-display-elem {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
     color: black; }
     .portfolio-container .portfolio-display-elem p {
-      padding-top: 30%;
+      padding-top: 35%;
       font-size: 18px; }
   @media screen and (min-width: 481px) {
     .portfolio-container .portfolio-container-fourth {
       display: none; } }
 
 #contact {
-  min-width: 300px;
-  width: auto;
-  background-color: black; }
+  background-color: #101010;
+  padding: 20px 0; }
+  @media screen and (min-width: 992px) {
+    #contact {
+      padding: 20px 80px; } }
+  @media screen and (min-width: 1200px) {
+    #contact {
+      padding: 20px 100px; } }
+  @media screen and (min-width: 1400px) {
+    #contact {
+      padding: 20px 210px; } }
+
+.footer-container {
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 40px 0; }
+  .footer-container h2 {
+    font-size: 30px;
+    font-family: "Quicksand";
+    color: white;
+    text-transform: uppercase; }
+  .footer-container hr {
+    width: 140px;
+    border-color: #009989;
+    margin-top: 0; }
+  .footer-container p {
+    font-size: 18px;
+    font-family: "Quicksand";
+    color: #454545;
+    margin: auto;
+    width: 50%; }
+    @media screen and (min-width: 481px) {
+      .footer-container p {
+        width: 40%; } }
+    @media screen and (min-width: 768px) {
+      .footer-container p {
+        width: 100%; } }
+    @media screen and (min-width: 1200px) {
+      .footer-container p {
+        width: 50%; } }
+  .footer-container .footer-contact p {
+    width: 100%; }
+
+#copyrights {
+  background-color: black;
+  color: #454545;
+  text-align: center; }
+  #copyrights p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-family: "Quicksand"; }

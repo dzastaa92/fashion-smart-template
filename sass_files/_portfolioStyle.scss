@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   height: auto;
+  display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   -webkit-flex-direction: row;
@@ -38,13 +39,13 @@
   }
   .portfolio-display-elem {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
     color: black;
     p{
-      padding-top: 30%;
+      padding-top: 35%;
       font-size: 18px;
     }
   }

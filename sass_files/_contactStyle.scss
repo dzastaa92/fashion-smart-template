@@ -1,0 +1,55 @@
+#contact {
+  background-color: $color-footer;
+  @include padding;
+}
+
+.footer-container {
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 40px 0;
+  h2 {
+    font-size: 30px;
+    font-family: "Quicksand";
+    color: $color-light;
+    text-transform: uppercase;
+  }
+  hr {
+    width: 140px;
+    border-color: $color-green;
+    margin-top: 0;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Quicksand";
+    color: $color-grey;
+    margin: auto;
+    width: 50%;
+    @include small{
+      width: 40%;
+    }
+    @include medium {
+      width: 100%;
+    }
+    @include xlarge {
+      width: 50%;
+    }
+  }
+  .footer-contact {
+    p {
+      width: 100%;
+
+    }
+  }
+}
+
+#copyrights {
+  background-color: black;
+  color: $color-grey;
+  text-align: center;
+  p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    font-family: "Quicksand";
+  }
+}
