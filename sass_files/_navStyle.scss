@@ -43,7 +43,9 @@ nav {
   }
   a {
     display: inline-block;
+    @include medium{
     margin-right: 30px;
+  }
   }
   .facebook {
     height: 24px;
