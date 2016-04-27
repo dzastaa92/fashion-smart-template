@@ -94,7 +94,7 @@ nav {
   float: none;
   button {
     border: 0;
-    float: right;
+    margin-right: 0px;
     @include medium {
       float: left;
     }

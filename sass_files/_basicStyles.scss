@@ -23,7 +23,7 @@ body{
 
 .section-content-text {
   position: relative;
-  top: 10%;
+  top: 5%;
   transform: translateY(-50%);
   @include small{
     top: 20%;
@@ -32,7 +32,7 @@ body{
     top: 40%;
   }
   h2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Quicksand";
     margin-bottom: 0;
     @include small{
@@ -59,13 +59,13 @@ body{
   //}
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Quicksand";
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0;
     @include small{
-      font-size: 30px;
+      font-size: 28px;
 
     }
     @include medium{

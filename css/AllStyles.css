@@ -20,7 +20,7 @@ body {
 
 .section-content-text {
   position: relative;
-  top: 10%;
+  top: 5%;
   transform: translateY(-50%); }
   @media screen and (min-width: 481px) {
     .section-content-text {
@@ -29,21 +29,21 @@ body {
     .section-content-text {
       top: 40%; } }
   .section-content-text h2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Quicksand";
     margin-bottom: 0; }
     @media screen and (min-width: 481px) {
       .section-content-text h2 {
         font-size: 18px; } }
   .section-content-text h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Quicksand";
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0; }
     @media screen and (min-width: 481px) {
       .section-content-text h1 {
-        font-size: 30px; } }
+        font-size: 28px; } }
     @media screen and (min-width: 768px) {
       .section-content-text h1 {
         font-size: 48px; } }
@@ -137,7 +137,7 @@ nav {
   float: none; }
   .navbar-header button {
     border: 0;
-    float: right; }
+    margin-right: 0px; }
     @media screen and (min-width: 768px) {
       .navbar-header button {
         float: left; } }
