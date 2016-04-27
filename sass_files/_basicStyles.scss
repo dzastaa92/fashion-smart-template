@@ -26,9 +26,6 @@ body{
   top: 5%;
   transform: translateY(-50%);
   @include small{
-    top: 20%;
-  }
-  @include medium{
     top: 40%;
   }
   h2 {
@@ -65,7 +62,7 @@ body{
     font-weight: bold;
     margin-top: 0;
     @include small{
-      font-size: 28px;
+      font-size: 32px;
 
     }
     @include medium{

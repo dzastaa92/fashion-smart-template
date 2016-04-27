@@ -24,9 +24,6 @@ body {
   transform: translateY(-50%); }
   @media screen and (min-width: 481px) {
     .section-content-text {
-      top: 20%; } }
-  @media screen and (min-width: 768px) {
-    .section-content-text {
       top: 40%; } }
   .section-content-text h2 {
     font-size: 12px;
@@ -43,7 +40,7 @@ body {
     margin-top: 0; }
     @media screen and (min-width: 481px) {
       .section-content-text h1 {
-        font-size: 28px; } }
+        font-size: 32px; } }
     @media screen and (min-width: 768px) {
       .section-content-text h1 {
         font-size: 48px; } }
@@ -257,7 +254,7 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
     left: 100%;
     margin-left: 15px; }
   .home-container h1 {
-    font-size: 50px;
+    font-size: 44px;
     color: white;
     text-transform: uppercase;
     font-family: "Quicksand";
@@ -428,7 +425,7 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   border-width: 30px; }
 
 .ourTeam-element-content h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Quicksand";
   text-transform: uppercase;
   line-height: 30px;
@@ -444,10 +441,13 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
       padding-top: 50px; } }
 
 .ourTeam-element-content h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Quicksand";
   margin-top: 0;
   line-height: 10px; }
+  @media screen and (min-width: 481px) {
+    .ourTeam-element-content h3 {
+      font-size: 20px; } }
 
 .ourTeam-element-content hr {
   width: 180px;

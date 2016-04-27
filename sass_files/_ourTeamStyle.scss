@@ -30,7 +30,7 @@
 
 
 .ourTeam-element-content h2 {
-  font-size: 36px;
+  font-size: 32px;
   font-family: "Quicksand";
   text-transform: uppercase;
   line-height: 30px;
@@ -50,10 +50,13 @@
 }
 
 .ourTeam-element-content h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Quicksand";
   margin-top: 0;
   line-height: 10px;
+  @include small{
+    font-size: 20px;
+  }
 }
 
 .ourTeam-element-content hr {
