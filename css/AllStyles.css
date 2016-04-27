@@ -15,39 +15,35 @@ body {
   border: 1px solid white;
   vertical-align: middle;
   color: white;
-  height: 200px;
+  height: 75%;
   width: calc(100% / 1.4); }
 
 .section-content-text {
   position: relative;
-  top: 40%;
+  top: 10%;
   transform: translateY(-50%); }
+  @media screen and (min-width: 481px) {
+    .section-content-text {
+      top: 20%; } }
+  @media screen and (min-width: 768px) {
+    .section-content-text {
+      top: 40%; } }
   .section-content-text h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Quicksand";
     margin-bottom: 0; }
-  .section-content-text h2 span:before, .section-content-text h2 span:after {
-    content: "";
-    position: absolute;
-    line-height: 0.5;
-    border-top: 1px solid white;
-    top: 12%;
-    width: 60px; }
-  .section-content-text h2 span:before {
-    right: 38%;
-    margin-right: 15px; }
-  .section-content-text h2 span:after {
-    left: 38%;
-    margin-left: 15px; }
+    @media screen and (min-width: 481px) {
+      .section-content-text h2 {
+        font-size: 18px; } }
   .section-content-text h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-family: "Quicksand";
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0; }
     @media screen and (min-width: 481px) {
       .section-content-text h1 {
-        font-size: 38px; } }
+        font-size: 30px; } }
     @media screen and (min-width: 768px) {
       .section-content-text h1 {
         font-size: 48px; } }

@@ -16,46 +16,56 @@ body{
   border: 1px solid white;
   vertical-align: middle;
   color: white;
-  height: 200px;
+  height: 75%;
   width: calc(100% / 1.4);
+
 }
 
 .section-content-text {
   position: relative;
-  top: 40%;
+  top: 10%;
   transform: translateY(-50%);
+  @include small{
+    top: 20%;
+  }
+  @include medium{
+    top: 40%;
+  }
   h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Quicksand";
     margin-bottom: 0;
+    @include small{
+      font-size: 18px;
+    }
   }
 
-  h2 span:before, h2 span:after {
-    content: "";
-    position: absolute;
-    line-height: 0.5;
-    border-top: 1px solid white;
-    top: 12%;
-    width: 60px;
-
-  }
-  h2 span:before {
-    right: 38%;
-    margin-right: 15px;
-  }
-  h2 span:after {
-    left: 38%;
-    margin-left: 15px;
-  }
+  //h2 span:before, h2 span:after {
+  //  content: "";
+  //  position: absolute;
+  //  line-height: 0.5;
+  //  border-top: 1px solid white;
+  //  top: 12%;
+  //  width: 60px;
+  //
+  //}
+  //h2 span:before {
+  //  right: 38%;
+  //  margin-right: 15px;
+  //}
+  //h2 span:after {
+  //  left: 38%;
+  //  margin-left: 15px;
+  //}
 
   h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-family: "Quicksand";
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0;
     @include small{
-      font-size: 38px;
+      font-size: 30px;
 
     }
     @include medium{
