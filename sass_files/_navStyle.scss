@@ -18,7 +18,10 @@ nav {
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
-
+  margin-left: 20px;
+  @include small{
+    margin-left: 0;
+  }
   a {
     color: $color-dark;
     padding: 10px;
@@ -98,6 +101,7 @@ nav {
   button {
     border: 0;
     margin-right: 0px;
+    padding-right: 50px;
     @include medium {
       float: left;
     }

@@ -71,7 +71,11 @@ nav {
   border: 1px solid #f34739;
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
-  border-bottom-left-radius: 2em; }
+  border-bottom-left-radius: 2em;
+  margin-left: 20px; }
+  @media screen and (min-width: 481px) {
+    .nav-logo {
+      margin-left: 0; } }
   .nav-logo a {
     color: black;
     padding: 10px; }
@@ -137,7 +141,8 @@ nav {
   float: none; }
   .navbar-header button {
     border: 0;
-    margin-right: 0px; }
+    margin-right: 0px;
+    padding-right: 50px; }
     @media screen and (min-width: 768px) {
       .navbar-header button {
         float: left; } }
