@@ -585,10 +585,16 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   width: 100%; }
   .portfolio-container .portfolio-container-first, .portfolio-container .portfolio-container-second, .portfolio-container .portfolio-container-third, .portfolio-container .portfolio-container-fourth {
     display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
     -webkit-flex-wrap: nowrap; }
     .portfolio-container .portfolio-container-first a img, .portfolio-container .portfolio-container-second a img, .portfolio-container .portfolio-container-third a img, .portfolio-container .portfolio-container-fourth a img {
       max-width: 100%;
