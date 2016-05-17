@@ -605,8 +605,6 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
     -ms-flex-wrap: nowrap;
     -webkit-flex-wrap: nowrap; }
     .portfolio-container .portfolio-container-first a img, .portfolio-container .portfolio-container-second a img, .portfolio-container .portfolio-container-third a img, .portfolio-container .portfolio-container-fourth a img {
-      max-width: 100%;
-      max-height: 100%;
       opacity: 0.6;
       transition: all .5s ease-in-out;
       -moz-transition: all .5s ease-in-out;
