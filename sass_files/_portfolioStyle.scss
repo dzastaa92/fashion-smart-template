@@ -14,7 +14,7 @@
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   width: 100%;
-  .portfolio-container-first, .portfolio-container-second, .portfolio-container-third, .portfolio-container-fourth {
+  .portfolio-element {
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -63,4 +63,16 @@
       display: none;
     }
   }
+}
+
+.portfolio-element{
+  opacity: 0;
+  -moz-transition: all 1000ms ease-in;
+  -webkit-transition: all 1000ms ease-in;
+  -o-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
+}
+
+.portfolio-element.in-view {
+  opacity: 1;
 }

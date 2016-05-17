@@ -5,7 +5,7 @@ nav {
   background-color: $color-light;
   position: relative;
   left: 0;
-  top:0;
+  top: 0;
   transition: all 1.2s ease;
   width: 100%;
 }
@@ -19,7 +19,7 @@ nav {
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   margin-left: 20px;
-  @include small{
+  @include small {
     margin-left: 0;
   }
   a {
@@ -34,21 +34,21 @@ nav {
 .nav-icons {
   float: right;
   margin-top: 10px;
-  visibility: hidden;
   transition: all 0.9s ease;
   @include large {
-    visibility: visible;
-    padding-right: 320px;
+    padding-right: 360px;
   }
-
   @include xlarge {
+    padding-right: 340px;
+  }
+  @include xxlarge {
     padding-right: 230px;
   }
   a {
     display: inline-block;
-    @include medium{
-    margin-right: 30px;
-  }
+    @include medium {
+      margin-right: 30px;
+    }
   }
   .facebook {
     height: 24px;
@@ -71,7 +71,6 @@ nav {
     width: 22px;
   }
 }
-
 
 #navigation-menu {
   height: 80px;
@@ -162,14 +161,15 @@ ul.navbar-nav {
     visibility: visible;
   }
 }
-li>a{
+
+li > a {
   color: $color-grey;
-  @include medium{
+  @include medium {
     color: $color-light-grey;
   }
 }
 
-li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus{
+li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   color: $color-dark !important;
   text-decoration: none;
   @include medium {
@@ -177,16 +177,17 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus{
   }
 }
 
-.nav-up{
+.nav-up {
   margin-top: 10px;
   opacity: 1;
 }
-.nav-down{
+
+.nav-down {
   margin-top: -100px;
   opacity: 0;
 }
 
-.navOnScroll{
+.navOnScroll {
   -webkit-box-shadow: 0 4px 5px $color-grey;
   -moz-box-shadow: 0 4px 5px $color-grey;
   box-shadow: 0 4px 5px $color-grey;
