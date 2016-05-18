@@ -50,23 +50,28 @@ nav {
       margin-right: 30px;
     }
   }
+
+  .facebook, .instagram, .twitter, .linkedin{
+    background: url("../Images/icons-1.gif") no-repeat;
+  }
+
   .facebook {
     height: 24px;
     width: 14px;
-    background: url("../Images/icons-1.gif") 0 0;
+    background-position:  0 0;
   }
   .instagram {
-    background: url("../Images/icons-1.gif") -40px 0;
+    background-position: -40px 0;
     height: 24px;
     width: 25px;
   }
   .twitter {
-    background: url("../Images/icons-1.gif") -90px 0;
+    background-position:  -90px 0;
     height: 24px;
     width: 30px;
   }
   .linkedin {
-    background: url("../Images/icons-1.gif") -150px 0;
+    background-position:  -150px 0;
     height: 24px;
     width: 22px;
   }
