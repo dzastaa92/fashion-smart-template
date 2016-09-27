@@ -11,11 +11,7 @@
   margin-top: 0;
   padding-top: 0;
   @include medium {
-    background: url('../Images/heabeBackground.png') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-attachment: fixed;
   }
 }
 

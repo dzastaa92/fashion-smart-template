@@ -4,6 +4,9 @@ body, html {
   overflow-x: hidden;
   width: 100%; }
 
+body {
+  overflow-y: hidden; }
+
 .section-container {
   position: relative; }
 
@@ -247,11 +250,7 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   padding-top: 0; }
   @media screen and (min-width: 768px) {
     #home {
-      background: url("../Images/heabeBackground.png") no-repeat center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; } }
+      background-attachment: fixed; } }
 
 .home-container {
   text-align: center;
