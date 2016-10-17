@@ -9,6 +9,8 @@ body {
 
 .section-container {
   position: relative; }
+  .section-container img {
+    width: 100%; }
 
 .section-content {
   position: absolute;
@@ -633,7 +635,8 @@ li > a:hover, li > a:focus, .navbar-brand:hover, .navbar-brand:focus {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  justify-content: center; }
   .portfolio-container .portfolio-element {
     display: flex;
     display: -webkit-flex;

@@ -6,8 +6,14 @@ body{
   overflow-y: hidden;
 }
 
+
 .section-container {
   position: relative;
+
+  img{
+    width:100%;
+  }
+
 }
 
 .section-content {
